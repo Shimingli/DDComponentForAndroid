@@ -50,10 +50,10 @@ public class ReaderFragment extends Fragment {
 
     private void goToShareActivityNormal() {
         Author author = new Author();
-        author.setName("Margaret Mitchell");
-        author.setCounty("USA");
+        author.setName("shiming 你爹");
+        author.setCounty("中国");
         ARouter.getInstance().build("/share/shareBook")
-                .withString("bookName", "Gone with the Wind")
+                .withString("bookName", "我是Arouter 上跳转过来的")
                 .withObject("author", author)
                 .navigation();
     }
@@ -62,10 +62,10 @@ public class ReaderFragment extends Fragment {
     //startActivityForResult
     private void goToShareActivityForResult() {
         Author author = new Author();
-        author.setName("Margaret Mitchell");
-        author.setCounty("USA");
+        author.setName("老婆");
+        author.setCounty("台湾");
         ARouter.getInstance().build("/share/shareMagazine")
-                .withString("bookName", "Gone with the Wind")
+                .withString("bookName", "我是Arouter上的跳转过来")
                 .withObject("author", author)
                 .navigation(getActivity(), REQUEST_CODE);
     }

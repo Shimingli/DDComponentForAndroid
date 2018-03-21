@@ -11,7 +11,7 @@ android {
         versionName "1.0"
 
         dataBinding {
-            enabled = true
+            enabled = true//开启databinding 的过程
         }
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
